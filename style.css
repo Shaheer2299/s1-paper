@@ -1,0 +1,231 @@
+body {
+  background-color: #060f29;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  text-align: center;
+  padding: 9px;
+  font-size: 16px;
+  word-spacing: 1.5px;
+  color: #003c56;
+}
+.button {
+  background-color: white;
+  border: 1.8px solid #003c56;
+  color: #003c56;
+  padding: 1px 25px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.floating-btn {
+  width: 130px;
+  height: 35px;
+  background: rgb(245, 251, 255);
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  justify-content: center;
+  text-decoration: none;
+  color: #008fbb;
+  font-size: 20px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  transition: 0.25s;
+}
+
+.floating-btn span {
+  padding-left: 3px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  color: #008fbb;
+  font-size: 17px;
+}
+/*Header Start*/
+
+.header {
+  overflow: hidden;
+  padding: 20px 20px;
+}
+
+.header-left a {
+  float: left;
+  color: white;
+  text-align: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header .logo {
+  position: relative;
+}
+.header .logo span {
+  white-space: nowrap;
+  color: white;
+  font-size: 14.4px;
+  position: absolute;
+  bottom: 0;
+  top: 40px;
+  left: 10px;
+}
+
+.header-right a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  padding-top: 20px;
+  padding-right: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a:hover {
+  color: #caab57;
+}
+
+/* MAIN BODY start*/
+.main {
+  color: white;
+  margin: auto;
+  width: 60%;
+  padding: 80px;
+  padding-bottom: 0px !important;
+}
+
+.main a {
+  color: white;
+  text-decoration: none;
+}
+
+.main a:hover {
+  color: #caab57;
+}
+
+figcaption {
+  margin: 8px 0px 16px;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.main-footer a {
+  padding-left: 2px;
+  padding-right: 25px;
+}
+
+.responsive {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/*footer start*/
+
+footer {
+  color: white;
+  margin: auto;
+  width: 60%;
+  padding: 80px;
+}
+
+.pagination a {
+  color: #caab57;
+  float: left;
+  padding: 8px 16px;
+  padding-bottom: 80px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.pagination p {
+  padding-top: 12px;
+}
+
+.pagination a:hover {
+  color: white;
+}
+
+.links a {
+  color: white;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #caab57;
+}
+
+/*responsiveness*/
+
+@media screen and (max-width: 1000px) {
+  .main {
+    padding: 0px;
+    padding-top: 100px;
+    width: 92%;
+  }
+
+  footer {
+    padding: 0px;
+    padding-top: 100px;
+    width: 92%;
+  }
+
+  h2.entry-title {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+
+  .header .logo {
+    position: static;
+  }
+
+  .header .logo span {
+    white-space: nowrap;
+    color: #060f29;
+    font-size: 14.4px;
+    position: absolute;
+    bottom: 0;
+    top: 100px;
+    left: 150px;
+  }
+
+  .main-footer i {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
